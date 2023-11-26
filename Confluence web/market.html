@@ -1,0 +1,123 @@
+       <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Job Seeker</title>
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <section class="header2"> 
+            <nav>
+                <a href = "index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJju2--FQ07GLnpTd96qi6CGDsvID17rA_-Q&usqp=CAU"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="jobs.html">Jobs</a></li>
+                        <li><a href="market.html">Market</a></li>
+                        <li><a href="login.html">Sign in/Sign up</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        
+            
+            <div class="left">
+                <h1>Info</h1>
+                <form method="post">
+                    <div class="txt_field">
+                        <input type="text" required>
+                        <span></span>
+                        <label>Name</label>
+                    </div>
+                    <div class="txt_field">
+                        <input type="text" required>
+                        <span></span>
+                        <label>Email</label>
+                    </div>
+                    <div class="txt_field">
+                        <input type="text" required>
+                        <span></span>
+                        <label>Phone number</label>
+                    </div>
+                    <div class="txt_field">
+                        <input type="text" required>
+                        <span></span>
+                        <label>Address</label>
+                    </div>
+            
+                    <div class="row">
+                        <div class="pack">
+                            <div class="pack-details">
+                                <input type="checkbox" id="bundle1" name="bundle1" value="">
+                                <h2>Basic</h2>
+                                <h2>$3 USD/month</h2>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> Typically includes the ability to create a basic profile/resume.</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> Allows you to search and apply for a limited number of jobs.</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> May offer limited access to additional features such as email alerts for new job postings.</p>
+                                
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="pack">
+                            <div class="pack-details">
+                                <input type="checkbox" id="bundle2" name="bundle2" value="">
+                                <h2>Pro</h2>    
+                                <h2>$9 USD/month</h2>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> Offers enhanced visibility for your profile or resume.</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> Provides access to a larger number of job listings.</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> May include features like application tracking, allowing you to see the status of your job applications.</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> Some platforms might provide career coaching or personalized advice.</p>
+                                
+                                
+                            </div>
+                        </div>
+                    
+                        <div class="pack">
+                            <div class="pack-details">
+                                <input type="checkbox" id="bundle3" name="bundle3" value="">
+                                <h2>Vip</h2>
+                                <h2>$20 USD/month</h2>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> Provides all the features of the basic and premium packages.</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> Often includes additional features such as resume reviews or optimizations.</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> May offer networking opportunities, like access to exclusive events or job fairs.</p>
+                                <p><i class="fa fa-check" aria-hidden="true"></i> Enjoy ad-free music, offline listening, and more!</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+            
+            
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+        </section>
+
+
+        <!-----------JavaScript------------>
+
+        <script>
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right = "0";
+            }
+            function hideMenu(){
+                navLinks.style.right = "-200px";
+            }
+            
+        </script>
+
+    </body>
+    </html>
